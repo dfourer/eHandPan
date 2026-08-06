@@ -1,9 +1,0 @@
-https://github.com/Yaeltex/mocolufa-ytx 
-https://github.com/kuwatay/mocolufa
-
-
-instructions:
-
-https://community.blokas.io/t/hid-compliant-midi-usb-device-using-arduino-mega2560-working/2948/2
-
-https://forum.yaeltex.com/t/pimp-my-mocolufa-dual-bootable-firmware-for-arduino-diy-midi-controllers/23
