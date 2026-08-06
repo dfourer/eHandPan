@@ -1,0 +1,14 @@
+
+Pour l’instant le delai est encore trop long entre l’impact et l’émission du son 
+Firmware 1.2a  70ms
+Firmware 1.2b  32ms
+(Mesure de la premiere frappe, le temps varie un peu)
+
+On a reduit de moitié, c’est deja bien.
+
+Le retard se voit aussi sur la led.
+
+Methode 
+J’ai enregistré l’impact avec un micro (signal haut) et le son émis en sortie du module (signal bas) dans un fichier stéréo. On lit la longueur dans la petite fenetre noire, ligne du bas de la rubrique longueur hmnsms.
+
+en zoomant Il est interessant de voir la forme du son qui ressemble vraiment  a ce que j’avais observé a l’oscillo en sortie de piezzo. Cette forme varie en fonction de la frappe.

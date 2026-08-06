@@ -1,0 +1,41 @@
+@startuml
+' https://plantuml.com/fr/use-case-diagram
+' ALT + d
+
+left to right direction
+title "High Level ePAN software architecture"
+
+package "Piezzo process" as piezzoman #LightGray {
+    rectangle "Piezzo" as piezzos #LightBlue
+}
+
+usecase "Note Queue" as queue
+
+package "Main process" as main #LightGray {
+  rectangle "Scheduler" as ordo #LightGreen
+  rectangle "Piezzo" as piezzor #LightBlue
+  rectangle "Sound\n<i>WAV, I2S</i>" as sound #LightBlue
+  rectangle "Web" as web #LightBlue
+  rectangle "MIDI Song" as midi #LightBlue
+  rectangle "LED" as led #LightBlue
+}
+
+piezzos --> queue : put
+queue --> piezzor : get
+
+ordo --> piezzor
+ordo --> sound
+ordo --> web
+ordo --> midi
+ordo --> led
+
+piezzor ..> sound : play note
+web ..> midi: load, play, ..
+midi ..> sound: <i>mode FREE</i>\nplay note
+piezzor .> midi: <i>mode LEARN</i>\ncheck note
+midi .> led : <i>mode LEARN</i>\nnote to play
+
+' note right of web : This is an example.
+
+
+@enduml

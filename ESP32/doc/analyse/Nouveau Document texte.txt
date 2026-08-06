@@ -1,0 +1,55 @@
+
+ESP32-S3-WROOM-1
+https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
+
+
+https://community.platformio.org/t/cant-find-esp32-s3-wroom-1-n16r8-16m-flash-8sram/30258/3
+create new project with board ESP32-S3-DevKitC-1
+open terminal in project directory (where platformio.ini is)
+call mkdir boards && wget -O boards/esp32-s3-devkitc-1-n16r8v.json https://raw.githubusercontent.com/platformio/platform-espressif32/deb6aa342245ad7bcb3d9ed69050f203779833ab/boards/esp32-s3-devkitc-1-n16r8v.json
+
+
+PB checksum & 16M
+
+https://github.com/espressif/arduino-esp32/issues/7011
+https://github.com/platformio/platform-espressif32/issues/837#issuecomment-1245958447
+
+https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32s3/esp32-s3-devkitc-1/user_guide.html
+
+
+
+Pb "freertos/FreeRTOS.h: No such file or directory"
+Removing .platformio\packages\framework-arduinoespressif32\ worked. This directory got messed up after using platform_packages in platformio.ini to install a custom version. Reverting platformio.ini did not resolve the issue. Deleting the directory (cache) did.
+
+
+How do you set up a new board ESP32-S3 N16R8 - General Discussion - PlatformIO Community
+
+sivar2311/ESP32-S3-PlatformIO-Flash-and-PSRAM-configurations: ESP32-S3 PlatformIO Flash and PSRAM configurations
+
+sivar2311/ESP32-S3-PlatformIO-Flash-and-PSRAM-configurations: ESP32-S3 PlatformIO Flash and PSRAM configurations
+[env:esp32-s3-devkitc-1]
+platform = espressif32
+board = esp32-s3-devkitc-1
+framework = arduino
+
+board_build.arduino.memory_type = qio_opi
+board_build.flash_mode = qio
+board_build.psram_type = opi
+board_upload.flash_size = 16MB
+board_upload.maximum_size = 16777216
+board_build.extra_flags = 
+  -DBOARD_HAS_PSRAM
+
+
+framework = arduino
+board_build.arduino.memory_type = qio_opi
+board_build.flash_mode = qio
+board_build.prsam_type = opi
+board_upload.flash_size = 16MB
+board_upload.maximum_size = 16777216
+board_build.extra_flags = 
+  -DBOARD_HAS_PSRAM
+
+
+arduino-esp32/tools/partitions/default_16MB.csv at master · espressif/arduino-esp32
+

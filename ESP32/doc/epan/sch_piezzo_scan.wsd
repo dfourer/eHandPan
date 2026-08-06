@@ -1,0 +1,39 @@
+@startuml
+title Piezzos Scan 
+' https://plantuml.com/fr/use-case-diagram
+' ALT + d
+start 
+
+#LightBlue: Short list is empty /
+
+repeat
+
+if (\n1 or 2 piezzo in __short list__\nand last check > <b>250 us</b>?\n) then (<color:green>yes) 
+    note left: priority to short list 
+    
+    #LightBlue:Select one of these piezzo from short list; 
+    #LightBlue:Read <b>intensity</b> this piezzo|
+    if (<b>intensity</b> < previous intensity \nor 3rd read ?) then (<color:green>yes)
+        note right: Find the max of the peak
+        #LightGreen:Play the related note ! ]
+        #LightBlue:Retrieve piezzo from the short list;
+    else (<color:red>no)
+        #LightBlue:Memorize intensity and timestamp;
+    endif
+else (<color:red>no)
+    #LightBlue:Select next piezzo ;
+        note right: circular from 0 to 15\nThis new piezzo is hit ?
+    #LightBlue:Read <b>intensity</b> from piezzo|
+    if ( <b>intensity</b> > threshold and not bounced) then (<color:green>yes)
+        note right: Check if hit is OK
+        #LightBlue:Add the piezzo in __shot list__\nMemorize intensity and timestamp;
+    else (<color:red>no)
+        #LightBlue:Ignore this piezzo hit;
+    endif
+endif
+
+repeat while () is (infinite loop) 
+stop
+
+
+@enduml

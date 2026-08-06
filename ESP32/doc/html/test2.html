@@ -1,0 +1,73 @@
+
+<html> <head>    <title>E-PAN</title>
+    <meta charset='UTF-8'>
+    <style>
+      body { background-color: #FAFAFA; font-family: Arial, Helvetica, Sans-Serif; font-size: 15px; Color: #000000; }
+      h2 { Color: #AA0000; font-size: 25px; }
+      h3 { Color: #2E2EFE; font-size: 20px; }
+      table { border: medium solid #6495ed; border-collapse: collapse;  } 
+      th { border: thin solid #6495ed;  padding: 5px; background-color: #D0E3FA;  } 
+      td { border: thin solid #6495ed;  padding: 5px; text-align: center; background-color: #ffffff; }
+      input.plage { text-align: right; margin-right: 5px;   } 
+    </style>
+  </head>
+<script>
+function doAction(action) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+    }
+  };
+  xhttp.open('GET', 'rest?action=' + action, true);
+  xhttp.send(); 
+}
+</script>
+function checkActivation() {
+  if (document.getElementById('nbnotes').innerHTML=='0' ) {
+   alert('0 note');
+   document.getElementById('learn').disabled=true;
+   document.getElementById('play').disabled=true;
+  } else {
+   document.getElementById('learn').disabled=false;
+   document.getElementById('play').disabled=false;
+  }
+}
+<body>
+<form action=/ method=post>
+<h2>E-PAN</h2>
+<form id=fb name=fb action=rest method=get>
+<table><tr>
+<td><button onclick=" doAction('load');  "  id='load' >Load song</button></td>
+<td><button onclick=" doAction('learn');  "  id='learn' >Learn song</button></td>
+<td><button onclick=" doAction('play');  "  id='play' >Play song</button></td>
+<td><button onclick=" doAction('stop');  "  id='stop' >Stop song</button></td>
+</tr></table>
+</form>
+<table>
+<tr><th> Nb notes</th>   <td> <span id='nbnotes'></td></tr>
+<tr><th> N° note en court</th>   <td> <span id='curnote'></td></tr>
+<tr><th> BPM</th>   <td> <span id='bpm'></td></tr>
+<tr><th> Mode </th>   <td> <span id='mode'></td></tr>
+<tr><th> Etat </th>   <td> <span id='etat'></td></tr>
+</table>
+<script>
+setInterval(function() {getNbNotesData();}, 2000);
+ function getNbNotesData() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            const obj = JSON.parse(this.responseText);
+            document.getElementById('nbnotes').innerHTML = obj.nbnotes;
+            document.getElementById('curnote').innerHTML = obj.curnote;
+            document.getElementById('bpm').innerHTML = obj.bpm;
+            document.getElementById('mode').innerHTML = obj.mode;
+            document.getElementById('etat').innerHTML = obj.etat;
+            checkActivation();
+          }
+        };
+      xhttp.open('GET', 'rest?action=info', true);
+      xhttp.send(); 
+ }
+</script>
+</body>
+</html>

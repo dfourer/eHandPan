@@ -1,0 +1,142 @@
+
+<html> <head>    <title>SpaceDrum</title>
+  <meta charset='UTF-8'>
+  <style>
+    body { background-color: #FAFAFA; font-family: Arial, Helvetica, Sans-Serif; font-size: 15px; Color: #000000; }
+    h2 { Color: #AA0000; font-size: 25px; }
+    h3 { Color: #2E2EFE; font-size: 20px; }
+    table { border: medium solid #6495ed; border-collapse: collapse;  } 
+    table.kb { border: 0   } 
+    th { border: thin solid #6495ed;  padding: 5px; background-color: #D0E3FA;  } 
+    td { border: thin solid #6495ed;  padding: 5px; text-align: center; background-color: #ffffff; }
+    td.vide { border: 0;  padding: 5px; text-align: center; background-color: #ffffff; }
+    td.blanche { border: thin solid #6495ed;  padding: 5px; text-align: center; background-color: #ffffff; }
+    td.noire { border: thin solid #6495ed;  padding: 5px; text-align: center; background-color: #4b4949; }
+    input.plage { text-align: right; margin-right: 5px;   } 
+  </style>
+</head>
+<script>
+function doAction(action,arg1) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+  }
+};
+var tmp = '';
+if (action=='bpm') {
+  tmp = '&arg1=' + document.getElementById('bpmtxt').value;
+} else if ( action=='volgen') {
+  tmp = '&arg1=' + document.getElementById('volgentxt').value;
+} else {
+  tmp = '&arg1=' + arg1
+}
+var uri = 'rest?action=' + action + tmp;
+xhttp.open('GET', uri, true);
+xhttp.send(); 
+}
+
+function checkActivation() {
+if (document.getElementById('nbnotes').innerHTML=='0' ) {
+ document.getElementById('learn').disabled=true;
+ document.getElementById('play').disabled=true;
+ document.getElementById('bpminput').disabled=true;
+ document.getElementById('bpmtxt').disabled=true;
+} else {
+ document.getElementById('learn').disabled=false;
+ document.getElementById('play').disabled=false;
+ document.getElementById('bpminput').disabled=false;
+ document.getElementById('bpmtxt').disabled=false;
+}
+if (document.getElementById('etat').innerHTML=='stop' ) {
+ document.getElementById('stop').disabled=true;
+} else {
+ document.getElementById('stop').disabled=false;
+}
+}
+function getMusicData() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    const obj = JSON.parse(this.responseText);
+    document.getElementById('filename').innerHTML = obj.filename;
+    document.getElementById('nbnotes').innerHTML = obj.nbnotes;
+    document.getElementById('curnote').innerHTML = obj.curnote;
+    document.getElementById('etat').innerHTML = obj.etat;
+    document.getElementById('bpmtxt').textContent = obj.bpm;
+    document.getElementById('bpminput').value = obj.bpm;
+    document.getElementById('volgentxt').textContent = obj.volgen;
+    document.getElementById('volgeninput').value = obj.volgen;
+    checkActivation();
+  }
+};
+xhttp.open('GET', 'rest?action=info', true);
+xhttp.send(); 
+}
+</script>
+<body>
+<h2>SpaceDrum</h2>
+<table><tr><th>Volume</th>
+<td><input id='volgeninput' type='range' min='0' max='100' step=1 value='0'/><output id='volgentxt'></output></td></tr>
+<tr><th>Fichier MIDI</th>
+   <td><form method='POST' action='/upload' enctype='multipart/form-data'><input type='file' id='filemidi' accept='.mid,.midi' name='data' onchange='form.submit()' /> </form></td></tr>
+<tr><th> &nbsp;</th>  <td><button onclick=" doAction('info','');  "  id='refresh' >Refresh</button></td></tr>
+</table><p>
+<table>
+<tr><th>Commandes</th><td>
+<button onclick=" doAction('learn','');  "  id='learn' >Learn song</button>
+<button onclick=" doAction('play','');  "  id='play' >Play song</button>
+<button onclick=" doAction('stop','');  "  id='stop' >Stop song</button>
+</td></tr>
+<tr><th>BPM</th>
+<td><input id='bpminput' type='range' min='30' max='200' step=1 value='30'/><output id='bpmtxt'></output></td></tr>
+<tr><th> Fichier </th>   <td> <span id='filename'></td></tr>
+<tr><th> Nb notes</th>   <td> <span id='nbnotes'></td></tr>
+<tr><th> Etat </th>   <td> <span id='etat'></td></tr>
+<tr><th> N° note en court</th>   <td> <span id='curnote'></td></tr>
+</table>
+<p><table><tr>
+<td><button onclick=" doAction('playnote','0');  "  id='playnote' >A2</button></td>
+<td><button onclick=" doAction('playnote','1');  "  id='playnote' >A#2</button></td>
+<td><button onclick=" doAction('playnote','2');  "  id='playnote' >B2</button></td>
+</tr></table>
+<p><table class='kb'><tr>
+<tr>
+<td class='vide'> &nbsp; </td>
+<td colspan=2 class='noire'> <button onclick="doAction('playnote','1');"  id='playnote'> A# </button> </td>
+<td colspan=2> &nbsp; </td>
+<td colspan=2> <button onclick="doAction('playnote','4');"  id='playnote'> C# </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','6');"  id='playnote'> D# </button> </td>
+<td colspan=2> &nbsp; </td>
+<td colspan=2> <button onclick="doAction('playnote','9');"  id='playnote'> F# </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','11');" id='playnote'> G# </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','13');"  id='playnote'> A# </button> </td>
+</tr>
+<tr>
+<td colspan=2 class='blanche'> <button onclick="doAction('playnote','0');"  id='playnote'> A </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','2');"  id='playnote'> B </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','4');"  id='playnote'> C </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','6');"  id='playnote'> D </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','8');"  id='playnote'> E </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','10');" id='playnote'> F </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','12');" id='playnote'> G </button> </td>
+<td colspan=2> <button onclick="doAction('playnote','14');" id='playnote'> A </button> </td>
+<td> &nbsp; </td>
+</tr>
+</tr></table>
+<script>
+
+const bpmtxt = document.querySelector('#bpmtxt');
+const bpminput = document.querySelector('#bpminput');
+bpmtxt.textContent = bpminput.value;
+bpminput.addEventListener('input', (event) => {  bpmtxt.textContent = event.target.value; }); 
+bpminput.addEventListener('mouseup', (event) => {  doAction('bpm',event.target.value); }); 
+const volgentxt = document.querySelector('#volgentxt');
+const volgeninput = document.querySelector('#volgeninput');
+volgentxt.textContent = volgeninput.value;
+volgeninput.addEventListener('input', (event) => {  volgentxt.textContent = event.target.value; }); 
+volgeninput.addEventListener('mouseup', (event) => {  doAction('volgen',event.target.value); }); 
+setInterval(function() {getMusicData();}, 2000);
+
+</script>
+</body>
+</html>

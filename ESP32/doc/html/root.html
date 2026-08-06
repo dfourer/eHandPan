@@ -1,0 +1,123 @@
+
+<html> <head>    <title>Recup'PAN - Configuration</title>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <style>
+    body { background-color: #FAFAFA; font-family: Arial; Color: #000000; min-width: max-content; }
+    h2 { Color: #0c0cd4; }
+    h3 { Color: #2E2EFE; }
+    table { border: 0; } 
+    table.kb { border: 0; width: 100%; } 
+    th { border: thin solid #6495ed;  padding: 2px; background-color: #D0E3FA; width:110px; } 
+    td { border: thin solid #6495ed;  padding: 2px; text-align: center; background-color: #ffffff; }
+    td.vide { border: 0;  padding: 5px; text-align: center; background-color: #ffffff; }
+    td.blanche { border: thin solid #6495ed;  padding: 5px; text-align: center; background-color: #d3cfcf; }
+    td.noire { border: thin solid #6495ed;  padding: 5px; text-align: center; background-color: #4b4949; }
+    input.plage { text-align: right; margin-right: 5px;   } 
+  </style>
+</head>
+<script>
+function changeThreshold(note,threshold) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+  }
+};
+var uri = '/rest?action=threshold&arg1=' + note + '&arg2=' + threshold;
+alert(uri);
+xhttp.open('GET', uri, true);
+xhttp.send(); 
+}
+
+function doAction(action,arg1) {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+  }
+};
+var uri = '/rest?action=' + action + '&arg1=' + arg1 ;
+xhttp.open('GET', uri, true);
+xhttp.send(); 
+}
+
+</script>
+<body>
+<h2>Recup'PAN Configuration</h2>
+<table>
+<tr><th>Note</th> <th>Seuil déclenchement</th> <th>Usine</th></tr>
+<tr><th>A2</th>  
+<td><input id='threshold0' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>A#2</th>  
+<td><input id='threshold1' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>B2</th>  
+<td><input id='threshold2' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>C3</th>  
+<td><input id='threshold3' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>C#3</th>  
+<td><input id='threshold4' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>D3</th>  
+<td><input id='threshold5' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>D#3</th>  
+<td><input id='threshold6' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>E3</th>  
+<td><input id='threshold7' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>F3</th>  
+<td><input id='threshold8' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>F#3</th>  
+<td><input id='threshold9' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>G3</th>  
+<td><input id='threshold10' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>G#3</th>  
+<td><input id='threshold11' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>A3</th>  
+<td><input id='threshold12' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+<tr><th>A#3</th>  
+<td><input id='threshold13' type='number' min='1' max='4095' required step=1 value='800'/></td>  <td>800</td></tr>
+</tr></table>
+
+<p><table>
+<tr><th>Paramètre</th>  <th>Valeur</th>  <th>Usine</th></tr>
+<tr><th>Délai entre 2 buffer I2S (en ms)</th> <td><input id='DELAY_I2S' type='number' min='0' max='1000' required step=1 value='10'/></td>  <td>10</td></tr>
+<tr><th>Délai max de double notes (en ms)</th> <td><input id='DELAY_MAX_DOUBLE_NOTES' type='number' min='10' max='1000' required step=10 value='200'/></td>  <td>200</td></tr>
+<tr><th>Affiche les LED au démarrage (0 ou 1)</th> <td><input id='isDemoLed' type='number' min='0' max='1' required step=1 value='1'/></td>  <td>1</td></tr>
+<tr><th>Durée d'affichage des LED au démarrage</th>   <td><input id='DELAY_LED_DEMO' type='number' min='10' max='1000' required step=10 value='300'/></td>  <td>300</td></tr>
+<tr><th>Durée d'affichage des LED en mode libre</th>   <td><input id='DELAY_LED' type='number' min='10' max='1000' required step=10 value='500'/></td>  <td>500</td></tr>
+<tr><th>Volume min au déclenchement du piezo</th>   <td><input id='PIEZZO_VOLUME_MIN' type='number' min='1' max='120' required step=10 value='10'/></td>  <td>20</td></tr>
+<tr><th>Délai min en 2 frappes piezo (antirebond) (en ms)</th>   <td><input id='DELAY_PIEZZO_MIN' type='number' min='10' max='1000' required step=10 value='10'/></td>  <td>50</td></tr>
+<tr><th>Délai max en 2 frappes piezo (nouvelle frappe) (en ms)</th>   <td><input id='DELAY_PIEZZO_MAX' type='number' min='10' max='1000' required step=10 value='300'/></td>  <td>300</td></tr>
+<tr><th>BPM min</th>   <td><input id='BPM_MIN' type='number' min='10' max='100' required step=1 value='10'/></td>  <td>20</td></tr>
+<tr><th>BPM max</th>   <td><input id='BPM_MAX' type='number' min='10' max='240' required step=1 value='180'/></td>  <td>180</td></tr>
+</table>
+<p> <button onclick=" doAction('saveconfig','');  "  id='saveconfig' > Enregistrer </button> </td></tr>
+<p> <button onclick=" doAction('resetconfig','');  "  id='resetconfig' > Restaurer Config Usine</button> </td></tr>
+<script>
+
+document.getElementById('threshold0').addEventListener('change', (event) => { changeThreshold(0,event.target.value);});  
+document.getElementById('threshold1').addEventListener('change', (event) => { changeThreshold(1,event.target.value);});  
+document.getElementById('threshold2').addEventListener('change', (event) => { changeThreshold(2,event.target.value);});  
+document.getElementById('threshold3').addEventListener('change', (event) => { changeThreshold(3,event.target.value);});  
+document.getElementById('threshold4').addEventListener('change', (event) => { changeThreshold(4,event.target.value);});  
+document.getElementById('threshold5').addEventListener('change', (event) => { changeThreshold(5,event.target.value);});  
+document.getElementById('threshold6').addEventListener('change', (event) => { changeThreshold(6,event.target.value);});  
+document.getElementById('threshold7').addEventListener('change', (event) => { changeThreshold(7,event.target.value);});  
+document.getElementById('threshold8').addEventListener('change', (event) => { changeThreshold(8,event.target.value);});  
+document.getElementById('threshold9').addEventListener('change', (event) => { changeThreshold(9,event.target.value);});  
+document.getElementById('threshold10').addEventListener('change', (event) => { changeThreshold(10,event.target.value);});  
+document.getElementById('threshold11').addEventListener('change', (event) => { changeThreshold(11,event.target.value);});  
+document.getElementById('threshold12').addEventListener('change', (event) => { changeThreshold(12,event.target.value);});  
+document.getElementById('threshold13').addEventListener('change', (event) => { changeThreshold(13,event.target.value);});  
+
+document.getElementById('DELAY_I2S').addEventListener('change', (event) => { doAction('DELAY_I2S',event.target.value);});  
+document.getElementById('DELAY_MAX_DOUBLE_NOTES').addEventListener('change', (event) => { doAction('DELAY_MAX_DOUBLE_NOTES',event.target.value);});  
+document.getElementById('isDemoLed').addEventListener('change', (event) => { doAction('isDemoLed',event.target.value);});  
+document.getElementById('DELAY_LED_DEMO').addEventListener('change', (event) => { doAction('DELAY_LED_DEMO',event.target.value);});  
+document.getElementById('DELAY_LED').addEventListener('change', (event) => { doAction('DELAY_LED',event.target.value);});  
+document.getElementById('PIEZZO_VOLUME_MIN').addEventListener('change', (event) => { doAction('PIEZZO_VOLUME_MIN',event.target.value);});  
+document.getElementById('DELAY_PIEZZO_MIN').addEventListener('change', (event) => { doAction('DELAY_PIEZZO_MIN',event.target.value);});  
+document.getElementById('DELAY_PIEZZO_MAX').addEventListener('change', (event) => { doAction('DELAY_PIEZZO_MAX',event.target.value);});  
+document.getElementById('BPM_MIN').addEventListener('change', (event) => { doAction('BPM_MIN',event.target.value);});  
+document.getElementById('BPM_MAX').addEventListener('change', (event) => { doAction('BPM_MAX',event.target.value);});  
+
+</script>
+</body>
+</html>

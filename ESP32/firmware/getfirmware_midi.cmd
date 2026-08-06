@@ -1,0 +1,1 @@
+copy ..\.pio\build\esp32_s3_N16R8_MIDI\firmware.bin firmware_v1.X.bin

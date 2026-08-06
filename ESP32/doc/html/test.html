@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .displayobject{
+       font-family: sans-serif;
+       margin: auto;
+       text-align: center;
+       width: 50%;
+       border: 3px solid #000000;
+       padding: 10px;
+       background: #558ED5;
+    }
+    h1 {
+      font-size: 36px;
+      color: white;
+    }
+    h4 {
+      font-size: 30px;
+      color: yellow;
+    }
+  </style>
+  <body>
+     <div class = "displayobject">
+       <h1>Update only webpage Values - no refresh needed</h1><br>
+       <h4>Temperature reading: <span id="TEMPvalue">A</span>&deg</h4>
+       <h4>Humidity reading: <span id="HUMIvalue">0</span>%</h4>
+       <h4>Pressure reading: <span id="PRESvalue">0</span>hPa</h4><br>
+     </div>
+     <script>
+       setInterval(function() {getSensorData();}, 1000); // Call the update function every set interval e.g. 1000mS or 1-sec
+  
+       function getSensorData() {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("TEMPvalue").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "TEMPread", true);
+        xhttp.send();
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("HUMIvalue").innerHTML = this.responseText;
+          }
+        };
+        xhttp.open("GET", "HUMIread", true);
+        xhttp.send();
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("PRESvalue").innerHTML = this.responseText;}
+        };  
+        xhttp.open("GET", "PRESread", true);
+        xhttp.send(); 
+      }
+    </script>
+  </body>
+</html>

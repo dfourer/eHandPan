@@ -1,0 +1,189 @@
+** HIT 1; 5500
+** DOPLAY 1; 5501
+** DOPLAY 2; 5501
+** QUEUR RECV; 5501 10 5512
+** playSound 1; 5512
+** playSound 2; 5512
+** playSound 3; 5513
+** playSound 4; 5523
+** loopPlayWaves 1; 5523
+** loopPlayWaves 2; 5525
+** loopPlayWaves 1; 5533
+** loopPlayWaves 2; 5534
+** loopPlayWaves 1; 5543
+
+------------------------
+
+** HIT 1; 6504
+** DOPLAY 1; 6505
+** DOPLAY 2; 6505
+** loopPlayPiezzo; 6506
+** playSound 1; 6506
+** playSound 2; 6506
+** playSound 3; 6517
+** playSound 4; 6517
+** loopPlayWaves 1; 6517
+** loopPlayWaves 2; 6519
+
+
+** HIT 1; 5955
+** DOPLAY 1; 5956
+** DOPLAY 2; 5956
+** loopPlayPiezzo; 5957
+** playSound 1; 5957
+** playSound 2; 5957
+** playSound 3; 5957
+** playSound 4; 5968
+** loopPlayWaves 1; 5968
+** loopPlayWaves 2; 5970
+** loopPlayWaves 1; 5978
+** loopPlayWaves 2; 5979
+----------------------
+** HIT 1; 5486
+** DOPLAY 1; 5487
+** DOPLAY 2; 5487
+** loopPlayPiezzo; 5488
+** playSound 1; 5488
+** playSound 2; 5488
+** playSound 3; 5488
+** playSound 4; 5499
+** loopPlayWaves 1; 5499
+** loopPlayWaves 2; 5501
+** loopPlayWaves 1; 5509
+** loopPlayWaves 2; 5510
+
+----------------------
+** HIT 1; 5835
+** DOPLAY 1; 5836
+** DOPLAY 2; 5836
+** loopPlayPiezzo; 5836
+** playSound 1; 5836
+** playSound 2; 5836
+** playSound 3; 5836
+** playSound 4; 5847
+** loopPlayWaves 1; 5847
+** loopPlayWaves 2; 5849
+** loopPlayWaves 1; 5857
+-----
+** HIT 1; 4344
+** DOPLAY 1; 4344
+** DOPLAY 2; 4344
+** loopPlayPiezzo; 4345
+** playSound 1; 4345
+** playSound 2; 4345
+** playSound 3; 4345
+** playSound 4; 4356
+** loopPlayWaves 1; 4356
+** loopPlayWaves 2; 4358
+** loopPlayWaves 1; 4366
+** loopPlayWaves 2; 4367
+
+** HIT 1; 72077
+** DOPLAY 1; 72078
+** DOPLAY 2; 72078
+** loopPlayPiezzo; 72078
+** playSound 1; 72078
+** playSound 2; 72078
+** playSound 3; 72089
+** playSound 4; 72089
+
+
+** HIT 1; 99317
+** DOPLAY 1; 99319
+** DOPLAY 2; 99319
+** loopPlayPiezzo; 99320
+** playSound 1; 99320
+** playSound 2; 99320
+** playSound 3; 99320
+** playSound 4; 99331
+
+** HIT 1; 148657
+** DOPLAY 1; 148658
+** DOPLAY 2; 148658
+** loopPlayPiezzo; 148658
+** playSound 1; 148658
+** playSound 2; 148658
+** playSound 3; 148669
+** playSound 4; 148669
+
+
+
+** HIT 1; 150097
+** DOPLAY 1; 150098
+** DOPLAY 2; 150098
+** loopPlayPiezzo; 150098
+** playSound 1; 150098
+** playSound 2; 150098
+** playSound 3; 150109
+** playSound 4; 150109
+
+-------------
+WEB DESCATIVE
+
+** HIT 1; 5063
+** DOPLAY 1; 5065
+** DOPLAY 2; 5065
+** loopPlayPiezzo; 5065
+** playSound 1; 5065
+** playSound 2; 5065
+** playSound 3; 5065
+** playSound 4; 5076
+** loopPlayWaves 1; 5076
+** loopPlayWaves 2; 5078
+** loopPlayWaves 1; 5086
+** loopPlayWaves 2; 5087
+
+** HIT 1; 20640
+** DOPLAY 1; 20641
+** DOPLAY 2; 20641
+** loopPlayPiezzo; 20641
+** playSound 1; 20641
+** playSound 2; 20641
+** playSound 3; 20652
+** playSound 4; 20652
+
+
+
+** HIT 1; 21280
+** DOPLAY 1; 21282
+** DOPLAY 2; 21282
+** loopPlayPiezzo; 21282
+** playSound 1; 21282
+** playSound 2; 21282
+** playSound 3; 21282
+** playSound 4; 21293
+
+
+
+** HIT 1; 21875
+** DOPLAY 1; 21876
+** DOPLAY 2; 21876
+** loopPlayPiezzo; 21877
+** playSound 1; 21877
+** playSound 2; 21877
+** playSound 3; 21877
+** playSound 4; 21888
+
+
+=============================
+- desactive WEB FULL
+
+** HIT 1; 2154
+** DOPLAY 1; 2155
+** DOPLAY 2; 2155
+** loopPlayPiezzo; 2156
+** playSound 1; 2156
+** playSound 2; 2156
+** playSound 3; 2156
+** playSound 4; 2167
+** loopPlayWaves 1; 2167
+** loopPlayWaves 2; 2169
+
+** HIT 1; 49771
+** DOPLAY 1; 49772
+** DOPLAY 2; 49772
+** loopPlayPiezzo; 49772
+** playSound 1; 49772
+** playSound 2; 49772
+** playSound 3; 49783
+** playSound 4; 49783
