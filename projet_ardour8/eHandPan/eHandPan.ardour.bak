@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Session version="7003" name="eHandPan" sample-rate="48000" session-range-is-free="1" id-counter="1299" rg-counter="1" name-counter="1" event-counter="2259" vca-counter="1">
+  <ProgramVersion created-with="Ardour 8.4.0~ds1-2ubuntu8" modified-with="Ardour 8.4.0~ds1-2ubuntu8"/>
+  <EngineHints backend="ALSA" input-device="sof-hda-dsp" output-device="sof-hda-dsp"/>
+  <MIDIPorts>
+    <Port name="Cue Control in" type="midi" direction="Input"/>
+    <Port name="MIDI Clock out" type="midi" direction="Output"/>
+    <Port name="MMC in" type="midi" direction="Input"/>
+    <Port name="MMC out" type="midi" direction="Output"/>
+    <Port name="MTC out" type="midi" direction="Output"/>
+    <Port name="Scene in" type="midi" direction="Input"/>
+    <Port name="Scene out" type="midi" direction="Output"/>
+    <Port name="x-virtual-keyboard" type="midi" direction="Output">
+      <Connection other="eHandPan/midi_in 1"/>
+      <Connection other="eHanPan LED/midi_in 1"/>
+      <Connection other="eHandPan/midi_in 1"/>
+    </Port>
+  </MIDIPorts>
+  <Config>
+    <Option name="use-region-fades" value="1"/>
+    <Option name="use-transport-fades" value="1"/>
+    <Option name="use-monitor-fades" value="1"/>
+    <Option name="native-file-data-format" value="FormatFloat"/>
+    <Option name="native-file-header-format" value="WAVE"/>
+    <Option name="auto-play" value="0"/>
+    <Option name="auto-return" value="0"/>
+    <Option name="auto-input" value="1"/>
+    <Option name="triggerbox-overrides-disk-monitoring" value="1"/>
+    <Option name="cue-behavior" value="FollowCues"/>
+    <Option name="punch-in" value="0"/>
+    <Option name="punch-out" value="0"/>
+    <Option name="count-in" value="0"/>
+    <Option name="session-monitoring" value=""/>
+    <Option name="record-mode" value="RecLayered"/>
+    <Option name="draw-opaque-midi_regions" value="0"/>
+    <Option name="subframes-per-frame" value="100"/>
+    <Option name="timecode-format" value="timecode_30"/>
+    <Option name="minitimeline-span" value="120"/>
+    <Option name="raid-path" value=""/>
+    <Option name="audio-search-path" value=""/>
+    <Option name="midi-search-path" value=""/>
+    <Option name="track-name-number" value="0"/>
+    <Option name="track-name-take" value="1"/>
+    <Option name="take-name" value="Take1"/>
+    <Option name="jack-time-master" value="1"/>
+    <Option name="use-video-sync" value="0"/>
+    <Option name="video-pullup" value="0"/>
+    <Option name="external-sync" value="0"/>
+    <Option name="insert-merge-policy" value="InsertMergeRelax"/>
+    <Option name="timecode-offset" value="0"/>
+    <Option name="timecode-offset-negative" value="1"/>
+    <Option name="slave-timecode-offset" value=" 00:00:00:00"/>
+    <Option name="timecode-generator-offset" value=" 00:00:00:00"/>
+    <Option name="midi-copy-is-fork" value="1"/>
+    <Option name="tracks-follow-session-time" value="0"/>
+    <Option name="realtime-export" value="0"/>
+    <Option name="use-surround-master" value="0"/>
+    <Option name="use-video-file-fps" value="0"/>
+    <Option name="videotimeline-pullup" value="1"/>
+    <Option name="wave-amplitude-zoom" value="0"/>
+    <Option name="wave-zoom-factor" value="2"/>
+    <Option name="show-summary" value="1"/>
+    <Option name="show-group-tabs" value="1"/>
+    <Option name="show-region-fades" value="1"/>
+    <Option name="show-busses-on-meterbridge" value="0"/>
+    <Option name="show-master-on-meterbridge" value="1"/>
+    <Option name="show-midi-on-meterbridge" value="1"/>
+    <Option name="show-rec-on-meterbridge" value="1"/>
+    <Option name="show-mute-on-meterbridge" value="0"/>
+    <Option name="show-solo-on-meterbridge" value="0"/>
+    <Option name="show-monitor-on-meterbridge" value="0"/>
+    <Option name="show-name-on-meterbridge" value="1"/>
+    <Option name="show-fader-on-meterbridge" value="0"/>
+    <Option name="meterbridge-label-height" value="0"/>
+    <Option name="default-time-domain" value="BeatTime"/>
+  </Config>
+  <Metadata/>
+  <Sources>
+    <Source name="test_14_notes-1.mid" take-id="" type="midi" flags="Writable" id="1284" origin=""/>
+  </Sources>
+  <TriggerBindings/>
+  <Regions>
+    <Region name="test_14_notes-1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="1" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b23040@b0" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1286" type="midi" first-edit="nothing" source-0="1284" master-source-0="1284"/>
+  </Regions>
+  <Selection/>
+  <Locations>
+    <Location id="1292" name="session" start="b3277" end="b34509" flags="IsSessionRange" locked="0" timestamp="1784977292" cue="0"/>
+  </Locations>
+  <Bundles/>
+  <VCAManager/>
+  <Routes>
+    <Route version="7003" id="71" name="Master" default-type="audio" strict-io="1" volume-applies-to-output="1" active="1" denormal-protection="0" meter-point="MeterOutput" disk-io-point="DiskIOPreFader" meter-type="MeterK14">
+      <PresentationInfo order="0" flags="MasterOut,OrderSet" color="2855877119"/>
+      <Controllable name="solo" id="79" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="85" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="87" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="Master" id="99" direction="Input" default-type="audio">
+        <Port name="Master/audio_in 1" type="audio" direction="Input">
+          <Connection other="eHandPan/audio_out 1"/>
+          <Connection other="eHandPan/audio_out 1"/>
+        </Port>
+        <Port name="Master/audio_in 2" type="audio" direction="Input">
+          <Connection other="eHandPan/audio_out 2"/>
+          <Connection other="eHandPan/audio_out 2"/>
+        </Port>
+      </IO>
+      <IO name="Master" id="100" direction="Output" default-type="audio">
+        <Port name="Master/audio_out 1" type="audio" direction="Output">
+          <ExtConnection for="ALSA;;sof-hda-dsp"/>
+          <ExtConnection for="ALSA;;sof-hda-dsp" other="system:playback_1"/>
+        </Port>
+        <Port name="Master/audio_out 2" type="audio" direction="Output">
+          <ExtConnection for="ALSA;;sof-hda-dsp"/>
+          <ExtConnection for="ALSA;;sof-hda-dsp" other="system:playback_2"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main,SurroundSend" muted="0"/>
+      <Controllable name="mute" id="81" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="83" flags="Toggle" value="0" phase-invert="00"/>
+      <Controllable name="mastervolume" id="107" flags="GainLike,NotAutomatable" value="1"/>
+      <Automation>
+        <AutomationList automation-id="solo" id="78" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+        <AutomationList automation-id="solo-iso" id="84" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+        <AutomationList automation-id="solo-safe" id="86" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+        <AutomationList automation-id="mute" id="80" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+        <AutomationList automation-id="phase" id="82" interpolation-style="Discrete" time-domain="AudioTime" state="Off"/>
+      </Automation>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="90" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="94" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="92" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="96" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="98" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="89" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="91" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="93" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="95" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="97" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="102" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="103" name="Amp" active="1" user-latency="0" use-user-latency="0" type="trim">
+        <Automation>
+          <AutomationList automation-id="trim" id="76" interpolation-style="Logarithmic" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="trimcontrol" id="77" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="101" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Automation>
+          <AutomationList automation-id="gain" id="74" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="gaincontrol" id="75" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="105" name="Master" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="Master" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Processor id="104" name="meter-Master" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Slavable/>
+    </Route>
+    <Route version="7003" id="270" name="eHandPan" default-type="midi" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" midi-playlist="348" saved-meter-point="MeterPostFader" alignment-choice="Automatic" playback-channel-mode="AllChannels" capture-channel-mode="AllChannels" playback-channel-mask="0xffff" capture-channel-mask="0xffff" note-mode="Sustained" step-editing="0" input-active="1" restore-pgm="1">
+      <PresentationInfo order="1" flags="MidiTrack,OrderSet,TriggerTrack" color="2855877119"/>
+      <Controllable name="solo" id="311" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="317" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="319" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="eHandPan" id="331" direction="Input" default-type="midi">
+        <Port name="eHandPan/midi_in 1" type="midi" direction="Input">
+          <Connection other="x-virtual-keyboard"/>
+          <ExtConnection for="ALSA;;sof-hda-dsp"/>
+          <ExtConnection for="ALSA;;sof-hda-dsp" other="system:midi_capture_5c70a490"/>
+        </Port>
+      </IO>
+      <IO name="eHandPan" id="332" direction="Output" default-type="midi">
+        <Port name="eHandPan/audio_out 1" type="audio" direction="Output">
+          <Connection other="Master/audio_in 1"/>
+          <Connection other="Master/audio_in 1"/>
+        </Port>
+        <Port name="eHandPan/audio_out 2" type="audio" direction="Output">
+          <Connection other="Master/audio_in 2"/>
+          <Connection other="Master/audio_in 2"/>
+        </Port>
+        <Port name="eHandPan/midi_out 1" type="midi" direction="Output"/>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main,SurroundSend" muted="0"/>
+      <Controllable name="mute" id="313" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="315" flags="Toggle" value="0" phase-invert=""/>
+      <Automation>
+        <AutomationList automation-id="solo" id="310" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-iso" id="316" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-safe" id="318" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="mute" id="312" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-enable" id="342" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-safe" id="344" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="phase" id="314" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="monitor" id="346" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="midi-velocity" id="354" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+      </Automation>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="322" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="326" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="324" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="328" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="330" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="321" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="323" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="325" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="327" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="329" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="341" name="recorder:eHandPan" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="340" name="player:eHandPan" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="273" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="midi" order="0">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+        </Triggers>
+      </Processor>
+      <Processor id="334" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="373" name="sfizz" active="1" user-latency="0" use-user-latency="0" type="lv2" unique-id="http://sfztools.github.io/sfizz" count="1" custom="0">
+        <Automation>
+          <AutomationList automation-id="parameter-4" id="374" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-8" id="382" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-9" id="384" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-10" id="386" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-11" id="388" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-12" id="390" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-13" id="392" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-20" id="394" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-21" id="396" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="parameter-22" id="398" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc128" id="402" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc129" id="404" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc130" id="406" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc131" id="408" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc132" id="410" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc133" id="412" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc134" id="414" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc135" id="416" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc136" id="418" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc137" id="420" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc138" id="422" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc139" id="424" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc140" id="426" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc141" id="428" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc142" id="430" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc143" id="432" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc144" id="434" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc145" id="436" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc146" id="438" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc147" id="440" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc148" id="442" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc149" id="444" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc150" id="446" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc151" id="448" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc152" id="450" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc153" id="452" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc154" id="454" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc155" id="456" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc156" id="458" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc157" id="460" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc158" id="462" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc159" id="464" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc160" id="466" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc161" id="468" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc162" id="470" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc163" id="472" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc164" id="474" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc165" id="476" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc166" id="478" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc167" id="480" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc168" id="482" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc169" id="484" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc170" id="486" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc171" id="488" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc172" id="490" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc173" id="492" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc174" id="494" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc175" id="496" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc176" id="498" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc177" id="500" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc178" id="502" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc179" id="504" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc180" id="506" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc181" id="508" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc182" id="510" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc183" id="512" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc184" id="514" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc185" id="516" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc186" id="518" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc187" id="520" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc188" id="522" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc189" id="524" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc190" id="526" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc191" id="528" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc192" id="530" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc193" id="532" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc194" id="534" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc195" id="536" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc196" id="538" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc197" id="540" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc198" id="542" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc199" id="544" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc200" id="546" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc201" id="548" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc202" id="550" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc203" id="552" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc204" id="554" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc205" id="556" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc206" id="558" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc207" id="560" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc208" id="562" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc209" id="564" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc210" id="566" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc211" id="568" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc212" id="570" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc213" id="572" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc214" id="574" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc215" id="576" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc216" id="578" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc217" id="580" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc218" id="582" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc219" id="584" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc220" id="586" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc221" id="588" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc222" id="590" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc223" id="592" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc224" id="594" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc225" id="596" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc226" id="598" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc227" id="600" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc228" id="602" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc229" id="604" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc230" id="606" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc231" id="608" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc232" id="610" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc233" id="612" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc234" id="614" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc235" id="616" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc236" id="618" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc237" id="620" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc238" id="622" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc239" id="624" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc240" id="626" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc241" id="628" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc242" id="630" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc243" id="632" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc244" id="634" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc245" id="636" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc246" id="638" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc247" id="640" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc248" id="642" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc249" id="644" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc250" id="646" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc251" id="648" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc252" id="650" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc253" id="652" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc254" id="654" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc255" id="656" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc256" id="658" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc257" id="660" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc258" id="662" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc259" id="664" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc260" id="666" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc261" id="668" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc262" id="670" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc263" id="672" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc264" id="674" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc265" id="676" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc266" id="678" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc267" id="680" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc268" id="682" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc269" id="684" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc270" id="686" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc271" id="688" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc272" id="690" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc273" id="692" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc274" id="694" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc275" id="696" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc276" id="698" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc277" id="700" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc278" id="702" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc279" id="704" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc280" id="706" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc281" id="708" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc282" id="710" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc283" id="712" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc284" id="714" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc285" id="716" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc286" id="718" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc287" id="720" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc288" id="722" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc289" id="724" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc290" id="726" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc291" id="728" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc292" id="730" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc293" id="732" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc294" id="734" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc295" id="736" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc296" id="738" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc297" id="740" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc298" id="742" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc299" id="744" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc300" id="746" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc301" id="748" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc302" id="750" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc303" id="752" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc304" id="754" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc305" id="756" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc306" id="758" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc307" id="760" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc308" id="762" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc309" id="764" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc310" id="766" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc311" id="768" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc312" id="770" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc313" id="772" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc314" id="774" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc315" id="776" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc316" id="778" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc317" id="780" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc318" id="782" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc319" id="784" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc320" id="786" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc321" id="788" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc322" id="790" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc323" id="792" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc324" id="794" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc325" id="796" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc326" id="798" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc327" id="800" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc328" id="802" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc329" id="804" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc330" id="806" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc331" id="808" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc332" id="810" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc333" id="812" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc334" id="814" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc335" id="816" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc336" id="818" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc337" id="820" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc338" id="822" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc339" id="824" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc340" id="826" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc341" id="828" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc342" id="830" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc343" id="832" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc344" id="834" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc345" id="836" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc346" id="838" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc347" id="840" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc348" id="842" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc349" id="844" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc350" id="846" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc351" id="848" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc352" id="850" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc353" id="852" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc354" id="854" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc355" id="856" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc356" id="858" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc357" id="860" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc358" id="862" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc359" id="864" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc360" id="866" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc361" id="868" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc362" id="870" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc363" id="872" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc364" id="874" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc365" id="876" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc366" id="878" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc367" id="880" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc368" id="882" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc369" id="884" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc370" id="886" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc371" id="888" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc372" id="890" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc373" id="892" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc374" id="894" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc375" id="896" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc376" id="898" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc377" id="900" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc378" id="902" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc379" id="904" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc380" id="906" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc381" id="908" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc382" id="910" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc383" id="912" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc384" id="914" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc385" id="916" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc386" id="918" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc387" id="920" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc388" id="922" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc389" id="924" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc390" id="926" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc391" id="928" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc392" id="930" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc393" id="932" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc394" id="934" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc395" id="936" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc396" id="938" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc397" id="940" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc398" id="942" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc399" id="944" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc400" id="946" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc401" id="948" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc402" id="950" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc403" id="952" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc404" id="954" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc405" id="956" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc406" id="958" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc407" id="960" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc408" id="962" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc409" id="964" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc410" id="966" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc411" id="968" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc412" id="970" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc413" id="972" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc414" id="974" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc415" id="976" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc416" id="978" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc417" id="980" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc418" id="982" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc419" id="984" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc420" id="986" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc421" id="988" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc422" id="990" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc423" id="992" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc424" id="994" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc425" id="996" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc426" id="998" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc427" id="1000" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc428" id="1002" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc429" id="1004" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc430" id="1006" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc431" id="1008" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc432" id="1010" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc433" id="1012" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc434" id="1014" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc435" id="1016" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc436" id="1018" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc437" id="1020" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc438" id="1022" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc439" id="1024" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc440" id="1026" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc441" id="1028" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc442" id="1030" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc443" id="1032" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc444" id="1034" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc445" id="1036" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc446" id="1038" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc447" id="1040" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc448" id="1042" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc449" id="1044" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc450" id="1046" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc451" id="1048" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc452" id="1050" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc453" id="1052" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc454" id="1054" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc455" id="1056" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc456" id="1058" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc457" id="1060" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc458" id="1062" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc459" id="1064" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc460" id="1066" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc461" id="1068" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc462" id="1070" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc463" id="1072" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc464" id="1074" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc465" id="1076" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc466" id="1078" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc467" id="1080" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc468" id="1082" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc469" id="1084" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc470" id="1086" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc471" id="1088" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc472" id="1090" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc473" id="1092" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc474" id="1094" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc475" id="1096" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc476" id="1098" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc477" id="1100" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc478" id="1102" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc479" id="1104" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc480" id="1106" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc481" id="1108" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc482" id="1110" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc483" id="1112" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc484" id="1114" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc485" id="1116" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc486" id="1118" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc487" id="1120" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc488" id="1122" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc489" id="1124" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc490" id="1126" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc491" id="1128" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc492" id="1130" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc493" id="1132" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc494" id="1134" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc495" id="1136" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc496" id="1138" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc497" id="1140" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc498" id="1142" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc499" id="1144" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc500" id="1146" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc501" id="1148" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc502" id="1150" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc503" id="1152" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc504" id="1154" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc505" id="1156" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc506" id="1158" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc507" id="1160" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc508" id="1162" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc509" id="1164" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc510" id="1166" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="property-http://sfztools.github.io/sfizz#cc511" id="1168" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+        <ConfiguredInput>
+          <Channels type="midi" count="1"/>
+        </ConfiguredInput>
+        <CustomSinks>
+          <Channels type="midi" count="1"/>
+        </CustomSinks>
+        <ConfiguredOutput>
+          <Channels type="audio" count="2"/>
+          <Channels type="midi" count="1"/>
+        </ConfiguredOutput>
+        <PresetOutput/>
+        <InputMap-0>
+          <Channelmap type="midi" from="0" to="0"/>
+        </InputMap-0>
+        <OutputMap-0>
+          <Channelmap type="audio" from="0" to="0"/>
+          <Channelmap type="audio" from="1" to="1"/>
+        </OutputMap-0>
+        <ThruMap/>
+        <lv2 last-preset-uri="" last-preset-label="" parameter-changed-since-last-preset="1" state-dir="state1">
+          <Port symbol="volume" value="0"/>
+          <Port symbol="num_voices" value="64"/>
+          <Port symbol="oversampling" value="1"/>
+          <Port symbol="preload_size" value="8192"/>
+          <Port symbol="freewheeling" value="0"/>
+          <Port symbol="scala_root_key" value="60"/>
+          <Port symbol="tuning_frequency" value="440"/>
+          <Port symbol="stretched_tuning" value="0"/>
+          <Port symbol="sample_quality" value="2"/>
+          <Port symbol="oscillator_quality" value="1"/>
+          <Port symbol="freewheeling_sample_quality" value="10"/>
+          <Port symbol="freewheeling_oscillator_quality" value="3"/>
+          <Port symbol="sustain_cancels_release" value="0"/>
+        </lv2>
+        <Controllable name="Volume" id="375" flags="" value="0" parameter="4" symbol="volume"/>
+        <Controllable name="Polyphony" id="377" flags="NotAutomatable" value="64" parameter="5" symbol="num_voices"/>
+        <Controllable name="Oversampling factor" id="379" flags="NotAutomatable" value="1" parameter="6" symbol="oversampling"/>
+        <Controllable name="Preload size" id="381" flags="NotAutomatable" value="8192" parameter="7" symbol="preload_size"/>
+        <Controllable name="hidden" id="383" flags="Toggle" value="0" parameter="8" symbol="freewheeling"/>
+        <Controllable name="Scala root key" id="385" flags="" value="60" parameter="9" symbol="scala_root_key"/>
+        <Controllable name="Tuning frequency" id="387" flags="" value="440" parameter="10" symbol="tuning_frequency"/>
+        <Controllable name="Stretched tuning" id="389" flags="" value="0" parameter="11" symbol="stretched_tuning"/>
+        <Controllable name="Sample quality" id="391" flags="" value="2" parameter="12" symbol="sample_quality"/>
+        <Controllable name="Oscillator quality" id="393" flags="" value="1" parameter="13" symbol="oscillator_quality"/>
+        <Controllable name="Freewheeling Sample quality" id="395" flags="" value="10" parameter="20" symbol="freewheeling_sample_quality"/>
+        <Controllable name="Freewheeling Oscillator quality" id="397" flags="" value="3" parameter="21" symbol="freewheeling_oscillator_quality"/>
+        <Controllable name="Sustain cancels release" id="399" flags="Toggle" value="0" parameter="22" symbol="sustain_cancels_release"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz:sfzfile" id="400" flags="NotAutomatable" property="77"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz:tuningfile" id="401" flags="NotAutomatable" property="78"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc128" id="403" flags="" property="217"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc129" id="405" flags="" property="218"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc130" id="407" flags="" property="219"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc131" id="409" flags="" property="220"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc132" id="411" flags="" property="221"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc133" id="413" flags="" property="222"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc134" id="415" flags="" property="223"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc135" id="417" flags="" property="224"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc136" id="419" flags="" property="225"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc137" id="421" flags="" property="226"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc138" id="423" flags="" property="227"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc139" id="425" flags="" property="228"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc140" id="427" flags="" property="229"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc141" id="429" flags="" property="230"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc142" id="431" flags="" property="231"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc143" id="433" flags="" property="232"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc144" id="435" flags="" property="233"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc145" id="437" flags="" property="234"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc146" id="439" flags="" property="235"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc147" id="441" flags="" property="236"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc148" id="443" flags="" property="237"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc149" id="445" flags="" property="238"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc150" id="447" flags="" property="239"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc151" id="449" flags="" property="240"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc152" id="451" flags="" property="241"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc153" id="453" flags="" property="242"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc154" id="455" flags="" property="243"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc155" id="457" flags="" property="244"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc156" id="459" flags="" property="245"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc157" id="461" flags="" property="246"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc158" id="463" flags="" property="247"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc159" id="465" flags="" property="248"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc160" id="467" flags="" property="249"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc161" id="469" flags="" property="250"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc162" id="471" flags="" property="251"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc163" id="473" flags="" property="252"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc164" id="475" flags="" property="253"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc165" id="477" flags="" property="254"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc166" id="479" flags="" property="255"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc167" id="481" flags="" property="256"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc168" id="483" flags="" property="257"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc169" id="485" flags="" property="258"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc170" id="487" flags="" property="259"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc171" id="489" flags="" property="260"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc172" id="491" flags="" property="261"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc173" id="493" flags="" property="262"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc174" id="495" flags="" property="263"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc175" id="497" flags="" property="264"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc176" id="499" flags="" property="265"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc177" id="501" flags="" property="266"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc178" id="503" flags="" property="267"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc179" id="505" flags="" property="268"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc180" id="507" flags="" property="269"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc181" id="509" flags="" property="270"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc182" id="511" flags="" property="271"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc183" id="513" flags="" property="272"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc184" id="515" flags="" property="273"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc185" id="517" flags="" property="274"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc186" id="519" flags="" property="275"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc187" id="521" flags="" property="276"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc188" id="523" flags="" property="277"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc189" id="525" flags="" property="278"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc190" id="527" flags="" property="279"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc191" id="529" flags="" property="280"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc192" id="531" flags="" property="281"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc193" id="533" flags="" property="282"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc194" id="535" flags="" property="283"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc195" id="537" flags="" property="284"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc196" id="539" flags="" property="285"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc197" id="541" flags="" property="286"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc198" id="543" flags="" property="287"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc199" id="545" flags="" property="288"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc200" id="547" flags="" property="289"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc201" id="549" flags="" property="290"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc202" id="551" flags="" property="291"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc203" id="553" flags="" property="292"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc204" id="555" flags="" property="293"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc205" id="557" flags="" property="294"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc206" id="559" flags="" property="295"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc207" id="561" flags="" property="296"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc208" id="563" flags="" property="297"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc209" id="565" flags="" property="298"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc210" id="567" flags="" property="299"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc211" id="569" flags="" property="300"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc212" id="571" flags="" property="301"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc213" id="573" flags="" property="302"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc214" id="575" flags="" property="303"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc215" id="577" flags="" property="304"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc216" id="579" flags="" property="305"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc217" id="581" flags="" property="306"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc218" id="583" flags="" property="307"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc219" id="585" flags="" property="308"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc220" id="587" flags="" property="309"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc221" id="589" flags="" property="310"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc222" id="591" flags="" property="311"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc223" id="593" flags="" property="312"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc224" id="595" flags="" property="313"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc225" id="597" flags="" property="314"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc226" id="599" flags="" property="315"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc227" id="601" flags="" property="316"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc228" id="603" flags="" property="317"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc229" id="605" flags="" property="318"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc230" id="607" flags="" property="319"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc231" id="609" flags="" property="320"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc232" id="611" flags="" property="321"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc233" id="613" flags="" property="322"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc234" id="615" flags="" property="323"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc235" id="617" flags="" property="324"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc236" id="619" flags="" property="325"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc237" id="621" flags="" property="326"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc238" id="623" flags="" property="327"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc239" id="625" flags="" property="328"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc240" id="627" flags="" property="329"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc241" id="629" flags="" property="330"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc242" id="631" flags="" property="331"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc243" id="633" flags="" property="332"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc244" id="635" flags="" property="333"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc245" id="637" flags="" property="334"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc246" id="639" flags="" property="335"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc247" id="641" flags="" property="336"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc248" id="643" flags="" property="337"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc249" id="645" flags="" property="338"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc250" id="647" flags="" property="339"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc251" id="649" flags="" property="340"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc252" id="651" flags="" property="341"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc253" id="653" flags="" property="342"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc254" id="655" flags="" property="343"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc255" id="657" flags="" property="344"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc256" id="659" flags="" property="345"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc257" id="661" flags="" property="346"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc258" id="663" flags="" property="347"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc259" id="665" flags="" property="348"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc260" id="667" flags="" property="349"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc261" id="669" flags="" property="350"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc262" id="671" flags="" property="351"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc263" id="673" flags="" property="352"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc264" id="675" flags="" property="353"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc265" id="677" flags="" property="354"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc266" id="679" flags="" property="355"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc267" id="681" flags="" property="356"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc268" id="683" flags="" property="357"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc269" id="685" flags="" property="358"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc270" id="687" flags="" property="359"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc271" id="689" flags="" property="360"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc272" id="691" flags="" property="361"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc273" id="693" flags="" property="362"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc274" id="695" flags="" property="363"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc275" id="697" flags="" property="364"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc276" id="699" flags="" property="365"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc277" id="701" flags="" property="366"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc278" id="703" flags="" property="367"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc279" id="705" flags="" property="368"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc280" id="707" flags="" property="369"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc281" id="709" flags="" property="370"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc282" id="711" flags="" property="371"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc283" id="713" flags="" property="372"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc284" id="715" flags="" property="373"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc285" id="717" flags="" property="374"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc286" id="719" flags="" property="375"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc287" id="721" flags="" property="376"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc288" id="723" flags="" property="377"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc289" id="725" flags="" property="378"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc290" id="727" flags="" property="379"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc291" id="729" flags="" property="380"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc292" id="731" flags="" property="381"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc293" id="733" flags="" property="382"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc294" id="735" flags="" property="383"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc295" id="737" flags="" property="384"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc296" id="739" flags="" property="385"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc297" id="741" flags="" property="386"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc298" id="743" flags="" property="387"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc299" id="745" flags="" property="388"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc300" id="747" flags="" property="389"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc301" id="749" flags="" property="390"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc302" id="751" flags="" property="391"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc303" id="753" flags="" property="392"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc304" id="755" flags="" property="393"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc305" id="757" flags="" property="394"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc306" id="759" flags="" property="395"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc307" id="761" flags="" property="396"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc308" id="763" flags="" property="397"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc309" id="765" flags="" property="398"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc310" id="767" flags="" property="399"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc311" id="769" flags="" property="400"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc312" id="771" flags="" property="401"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc313" id="773" flags="" property="402"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc314" id="775" flags="" property="403"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc315" id="777" flags="" property="404"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc316" id="779" flags="" property="405"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc317" id="781" flags="" property="406"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc318" id="783" flags="" property="407"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc319" id="785" flags="" property="408"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc320" id="787" flags="" property="409"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc321" id="789" flags="" property="410"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc322" id="791" flags="" property="411"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc323" id="793" flags="" property="412"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc324" id="795" flags="" property="413"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc325" id="797" flags="" property="414"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc326" id="799" flags="" property="415"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc327" id="801" flags="" property="416"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc328" id="803" flags="" property="417"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc329" id="805" flags="" property="418"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc330" id="807" flags="" property="419"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc331" id="809" flags="" property="420"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc332" id="811" flags="" property="421"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc333" id="813" flags="" property="422"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc334" id="815" flags="" property="423"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc335" id="817" flags="" property="424"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc336" id="819" flags="" property="425"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc337" id="821" flags="" property="426"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc338" id="823" flags="" property="427"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc339" id="825" flags="" property="428"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc340" id="827" flags="" property="429"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc341" id="829" flags="" property="430"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc342" id="831" flags="" property="431"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc343" id="833" flags="" property="432"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc344" id="835" flags="" property="433"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc345" id="837" flags="" property="434"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc346" id="839" flags="" property="435"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc347" id="841" flags="" property="436"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc348" id="843" flags="" property="437"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc349" id="845" flags="" property="438"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc350" id="847" flags="" property="439"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc351" id="849" flags="" property="440"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc352" id="851" flags="" property="441"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc353" id="853" flags="" property="442"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc354" id="855" flags="" property="443"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc355" id="857" flags="" property="444"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc356" id="859" flags="" property="445"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc357" id="861" flags="" property="446"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc358" id="863" flags="" property="447"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc359" id="865" flags="" property="448"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc360" id="867" flags="" property="449"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc361" id="869" flags="" property="450"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc362" id="871" flags="" property="451"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc363" id="873" flags="" property="452"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc364" id="875" flags="" property="453"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc365" id="877" flags="" property="454"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc366" id="879" flags="" property="455"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc367" id="881" flags="" property="456"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc368" id="883" flags="" property="457"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc369" id="885" flags="" property="458"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc370" id="887" flags="" property="459"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc371" id="889" flags="" property="460"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc372" id="891" flags="" property="461"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc373" id="893" flags="" property="462"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc374" id="895" flags="" property="463"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc375" id="897" flags="" property="464"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc376" id="899" flags="" property="465"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc377" id="901" flags="" property="466"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc378" id="903" flags="" property="467"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc379" id="905" flags="" property="468"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc380" id="907" flags="" property="469"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc381" id="909" flags="" property="470"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc382" id="911" flags="" property="471"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc383" id="913" flags="" property="472"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc384" id="915" flags="" property="473"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc385" id="917" flags="" property="474"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc386" id="919" flags="" property="475"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc387" id="921" flags="" property="476"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc388" id="923" flags="" property="477"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc389" id="925" flags="" property="478"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc390" id="927" flags="" property="479"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc391" id="929" flags="" property="480"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc392" id="931" flags="" property="481"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc393" id="933" flags="" property="482"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc394" id="935" flags="" property="483"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc395" id="937" flags="" property="484"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc396" id="939" flags="" property="485"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc397" id="941" flags="" property="486"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc398" id="943" flags="" property="487"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc399" id="945" flags="" property="488"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc400" id="947" flags="" property="489"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc401" id="949" flags="" property="490"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc402" id="951" flags="" property="491"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc403" id="953" flags="" property="492"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc404" id="955" flags="" property="493"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc405" id="957" flags="" property="494"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc406" id="959" flags="" property="495"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc407" id="961" flags="" property="496"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc408" id="963" flags="" property="497"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc409" id="965" flags="" property="498"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc410" id="967" flags="" property="499"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc411" id="969" flags="" property="500"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc412" id="971" flags="" property="501"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc413" id="973" flags="" property="502"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc414" id="975" flags="" property="503"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc415" id="977" flags="" property="504"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc416" id="979" flags="" property="505"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc417" id="981" flags="" property="506"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc418" id="983" flags="" property="507"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc419" id="985" flags="" property="508"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc420" id="987" flags="" property="509"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc421" id="989" flags="" property="510"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc422" id="991" flags="" property="511"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc423" id="993" flags="" property="512"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc424" id="995" flags="" property="513"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc425" id="997" flags="" property="514"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc426" id="999" flags="" property="515"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc427" id="1001" flags="" property="516"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc428" id="1003" flags="" property="517"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc429" id="1005" flags="" property="518"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc430" id="1007" flags="" property="519"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc431" id="1009" flags="" property="520"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc432" id="1011" flags="" property="521"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc433" id="1013" flags="" property="522"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc434" id="1015" flags="" property="523"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc435" id="1017" flags="" property="524"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc436" id="1019" flags="" property="525"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc437" id="1021" flags="" property="526"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc438" id="1023" flags="" property="527"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc439" id="1025" flags="" property="528"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc440" id="1027" flags="" property="529"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc441" id="1029" flags="" property="530"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc442" id="1031" flags="" property="531"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc443" id="1033" flags="" property="532"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc444" id="1035" flags="" property="533"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc445" id="1037" flags="" property="534"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc446" id="1039" flags="" property="535"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc447" id="1041" flags="" property="536"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc448" id="1043" flags="" property="537"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc449" id="1045" flags="" property="538"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc450" id="1047" flags="" property="539"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc451" id="1049" flags="" property="540"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc452" id="1051" flags="" property="541"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc453" id="1053" flags="" property="542"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc454" id="1055" flags="" property="543"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc455" id="1057" flags="" property="544"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc456" id="1059" flags="" property="545"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc457" id="1061" flags="" property="546"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc458" id="1063" flags="" property="547"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc459" id="1065" flags="" property="548"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc460" id="1067" flags="" property="549"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc461" id="1069" flags="" property="550"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc462" id="1071" flags="" property="551"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc463" id="1073" flags="" property="552"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc464" id="1075" flags="" property="553"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc465" id="1077" flags="" property="554"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc466" id="1079" flags="" property="555"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc467" id="1081" flags="" property="556"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc468" id="1083" flags="" property="557"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc469" id="1085" flags="" property="558"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc470" id="1087" flags="" property="559"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc471" id="1089" flags="" property="560"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc472" id="1091" flags="" property="561"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc473" id="1093" flags="" property="562"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc474" id="1095" flags="" property="563"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc475" id="1097" flags="" property="564"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc476" id="1099" flags="" property="565"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc477" id="1101" flags="" property="566"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc478" id="1103" flags="" property="567"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc479" id="1105" flags="" property="568"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc480" id="1107" flags="" property="569"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc481" id="1109" flags="" property="570"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc482" id="1111" flags="" property="571"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc483" id="1113" flags="" property="572"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc484" id="1115" flags="" property="573"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc485" id="1117" flags="" property="574"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc486" id="1119" flags="" property="575"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc487" id="1121" flags="" property="576"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc488" id="1123" flags="" property="577"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc489" id="1125" flags="" property="578"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc490" id="1127" flags="" property="579"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc491" id="1129" flags="" property="580"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc492" id="1131" flags="" property="581"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc493" id="1133" flags="" property="582"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc494" id="1135" flags="" property="583"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc495" id="1137" flags="" property="584"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc496" id="1139" flags="" property="585"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc497" id="1141" flags="" property="586"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc498" id="1143" flags="" property="587"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc499" id="1145" flags="" property="588"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc500" id="1147" flags="" property="589"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc501" id="1149" flags="" property="590"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc502" id="1151" flags="" property="591"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc503" id="1153" flags="" property="592"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc504" id="1155" flags="" property="593"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc505" id="1157" flags="" property="594"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc506" id="1159" flags="" property="595"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc507" id="1161" flags="" property="596"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc508" id="1163" flags="" property="597"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc509" id="1165" flags="" property="598"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc510" id="1167" flags="" property="599"/>
+        <Controllable name="property-http://sfztools.github.io/sfizz#cc511" id="1169" flags="" property="600"/>
+      </Processor>
+      <Processor id="333" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Automation>
+          <AutomationList automation-id="gain" id="306" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="gaincontrol" id="307" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="337" name="meter-eHandPan" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="338" name="eHandPan" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="eHandPan" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="347" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="345" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="343" flags="Toggle,RealTime" value="0"/>
+    </Route>
+    <Route version="7003" id="1175" name="eHanPan LED" default-type="midi" strict-io="1" active="1" denormal-protection="0" meter-point="MeterPostFader" disk-io-point="DiskIOPreFader" meter-type="MeterPeak" midi-playlist="1253" saved-meter-point="MeterPostFader" alignment-choice="Automatic" playback-channel-mode="AllChannels" capture-channel-mode="AllChannels" playback-channel-mask="0xffff" capture-channel-mask="0xffff" note-mode="Sustained" step-editing="0" input-active="1" restore-pgm="1">
+      <PresentationInfo order="2" flags="MidiTrack,OrderSet,TriggerTrack" color="4289374975"/>
+      <Controllable name="solo" id="1216" flags="Toggle,RealTime" value="0" self-solo="0" soloed-by-upstream="0" soloed-by-downstream="0"/>
+      <Controllable name="solo-iso" id="1222" flags="Toggle,RealTime" value="0" solo-isolated="0"/>
+      <Controllable name="solo-safe" id="1224" flags="Toggle" value="0" solo-safe="0"/>
+      <IO name="eHanPan LED" id="1236" direction="Input" default-type="midi">
+        <Port name="eHanPan LED/midi_in 1" type="midi" direction="Input">
+          <ExtConnection for="ALSA;;sof-hda-dsp"/>
+          <ExtConnection for="ALSA;;sof-hda-dsp" other="system:midi_capture_5c70a490"/>
+        </Port>
+      </IO>
+      <IO name="eHanPan LED" id="1237" direction="Output" default-type="midi">
+        <Port name="eHanPan LED/midi_out 1" type="midi" direction="Output">
+          <ExtConnection for="ALSA;;sof-hda-dsp"/>
+          <ExtConnection for="ALSA;;sof-hda-dsp" other="system:midi_playback_5c70a490"/>
+        </Port>
+      </IO>
+      <MuteMaster mute-point="PostFader,Listen,Main,SurroundSend" muted="0"/>
+      <Controllable name="mute" id="1218" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="phase" id="1220" flags="Toggle" value="0" phase-invert=""/>
+      <Automation>
+        <AutomationList automation-id="solo" id="1215" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-iso" id="1221" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="solo-safe" id="1223" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="mute" id="1217" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-enable" id="1247" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="rec-safe" id="1249" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="phase" id="1219" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="monitor" id="1251" interpolation-style="Discrete" time-domain="BeatTime" state="Off"/>
+        <AutomationList automation-id="midi-velocity" id="1259" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+      </Automation>
+      <Pannable>
+        <Controllable name="pan-azimuth" id="1227" flags="" value="0.5"/>
+        <Controllable name="pan-width" id="1231" flags="" value="0"/>
+        <Controllable name="pan-elevation" id="1229" flags="" value="0"/>
+        <Controllable name="pan-frontback" id="1233" flags="" value="0"/>
+        <Controllable name="pan-lfe" id="1235" flags="" value="0"/>
+        <Automation>
+          <AutomationList automation-id="pan-azimuth" id="1226" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-elevation" id="1228" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-width" id="1230" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-frontback" id="1232" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+          <AutomationList automation-id="pan-lfe" id="1234" interpolation-style="Linear" time-domain="BeatTime" state="Off"/>
+        </Automation>
+      </Pannable>
+      <Processor id="1246" name="recorder:eHanPan LED" active="1" user-latency="0" use-user-latency="0" type="diskwriter" record-safe="0"/>
+      <Processor id="1245" name="player:eHanPan LED" active="1" user-latency="0" use-user-latency="0" type="diskreader"/>
+      <Processor id="1178" name="TriggerBox" active="1" user-latency="0" use-user-latency="0" type="triggerbox" data-type="midi" order="1">
+        <Triggers>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="0" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="1" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="2" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="3" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="4" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="5" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="6" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="7" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="8" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="9" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="10" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="11" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="12" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="13" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="14" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+          <Trigger name="" gain="1" color="3200171775" follow-count="1" use-follow-length="0" follow-length="1|0|0" legato="0" velocity-effect="0" follow-action-probability="0" quantization="1|0|0" launch-style="OneShot" follow-action-0="Again:0" follow-action-1="Stop:0" stretchable="1" cue_isolated="0" allow_patch_changes="1" stretch_mode="Crisp" index="15" segment-tempo="0" start="b0" used-channels="0" channel-map="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"/>
+        </Triggers>
+      </Processor>
+      <Processor id="1239" name="Polarity" active="1" user-latency="0" use-user-latency="0" type="polarity"/>
+      <Processor id="1238" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+        <Automation>
+          <AutomationList automation-id="gain" id="1211" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+        </Automation>
+        <Controllable name="gaincontrol" id="1212" flags="GainLike" value="1"/>
+      </Processor>
+      <Processor id="1242" name="meter-eHanPan LED" active="1" user-latency="0" use-user-latency="0" type="meter"/>
+      <Processor id="1243" name="eHanPan LED" active="1" user-latency="0" use-user-latency="0" own-input="1" own-output="0" output="eHanPan LED" type="main-outs" role="Main">
+        <PannerShell bypassed="0" user-panner="" linked-to-route="1"/>
+      </Processor>
+      <Slavable/>
+      <Controllable name="monitor" id="1252" flags="RealTime" value="0" monitoring=""/>
+      <Controllable name="rec-safe" id="1250" flags="Toggle,RealTime" value="0"/>
+      <Controllable name="rec-enable" id="1248" flags="Toggle,RealTime" value="0"/>
+    </Route>
+  </Routes>
+  <Playlists>
+    <Playlist id="348" name="eHandPan" type="midi" orig-track-id="270" pgroup-id="" shared-with-ids="" frozen="0" combine-ops="0"/>
+    <Playlist id="1253" name="eHanPan LED" type="midi" orig-track-id="1175" pgroup-id="" shared-with-ids="" frozen="0" combine-ops="0">
+      <Region name="test_14_notes-1" muted="0" opaque="1" locked="0" video-locked="0" automatic="0" whole-file="0" import="0" external="1" sync-marked="0" left-of-split="0" right-of-split="0" hidden="0" position-locked="0" valid-transients="0" start="b0" length="b23040@b3277" sync-position="b0" ancestral-start="b0" ancestral-length="b0@b0" stretch="1" shift="1" layering-index="0" tags="" contents="0" rgroup="0" id="1290" type="midi" first-edit="nothing" source-0="1284" master-source-0="1284"/>
+    </Playlist>
+  </Playlists>
+  <UnusedPlaylists/>
+  <RouteGroups/>
+  <Click>
+    <IO name="Click" id="68" direction="Output" default-type="audio">
+      <Port name="Click/audio_out 1" type="audio" direction="Output">
+        <ExtConnection for="ALSA;;sof-hda-dsp"/>
+        <ExtConnection for="ALSA;;sof-hda-dsp" other="system:playback_1"/>
+      </Port>
+      <Port name="Click/audio_out 2" type="audio" direction="Output">
+        <ExtConnection for="ALSA;;sof-hda-dsp"/>
+        <ExtConnection for="ALSA;;sof-hda-dsp" other="system:playback_2"/>
+      </Port>
+    </IO>
+    <Processor id="69" name="Amp" active="1" user-latency="0" use-user-latency="0" type="amp">
+      <Automation>
+        <AutomationList automation-id="gain" id="66" interpolation-style="Exponential" time-domain="AudioTime" state="Off"/>
+      </Automation>
+      <Controllable name="gaincontrol" id="67" flags="GainLike" value="1"/>
+    </Processor>
+  </Click>
+  <Speakers>
+    <Speaker azimuth="240" elevation="0" distance="1"/>
+    <Speaker azimuth="120" elevation="0" distance="1"/>
+  </Speakers>
+  <TempoMap superclocks-per-second="282240000">
+    <Tempos>
+      <Tempo npm="120" enpm="120" note-type="4" type="Constant" locked-to-meter="0" continuing="0" active="1" sclock="0" quarters="0:0" bbt="1|1|0" omega="0"/>
+    </Tempos>
+    <Meters>
+      <Meter note-value="4" divisions-per-bar="4" sclock="0" quarters="0:0" bbt="1|1|0"/>
+    </Meters>
+    <MusicTimes/>
+  </TempoMap>
+  <ControlProtocols>
+    <Protocol name="Ableton Push 2" active="0" session-state="0"/>
+    <Protocol name="ContourDesign" active="0" session-state="0"/>
+    <Protocol name="Generic MIDI" active="0" session-state="0"/>
+    <Protocol name="Mackie" active="0" session-state="0"/>
+    <Protocol name="Novation Launch Control XL" active="0" session-state="0"/>
+    <Protocol name="Novation LaunchPad Mini" active="0" session-state="0"/>
+    <Protocol name="Novation LaunchPad Pro" active="0" session-state="0"/>
+    <Protocol name="Novation LaunchPad X" active="0" session-state="0"/>
+    <Protocol name="Open Sound Control (OSC)" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort16" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort2" active="0" session-state="0"/>
+    <Protocol name="PreSonus FaderPort8" active="0" session-state="0"/>
+    <Protocol name="SSL 360: UF8 UF1" active="0" session-state="0"/>
+    <Protocol name="Softube Console1" active="0" session-state="0"/>
+    <Protocol name="Steinberg CC121" active="0" session-state="0"/>
+    <Protocol name="Tascam US-2400" active="0" session-state="0"/>
+    <Protocol name="WebSockets Server (Experimental)" active="0" session-state="0"/>
+    <Protocol name="Wiimote" active="0" session-state="0"/>
+  </ControlProtocols>
+  <Extra>
+    <AddRouteDialog LastRouteType="MidiTrack"/>
+    <UI>
+      <Window name="key-editor" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="session-options-editor" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="speaker-config" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="about" visible="0" x-off="2668" y-off="255" x-size="424" y-size="611"/>
+      <Window name="add-routes" visible="0" x-off="-1" y-off="-1" x-size="634" y-size="503"/>
+      <Window name="add-video" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="inspector" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-midi-setup" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="video-export" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="script-manager" visible="0" x-off="2388" y-off="823" x-size="432" y-size="357"/>
+      <Window name="bundle-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="locations" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="big-clock" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="big-transport" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="virtual-keyboard" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="library-downloader" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="audio-connection-manager" visible="0" x-off="2127" y-off="162" x-size="382" y-size="377"/>
+      <Window name="midi-connection-manager" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="luawindow" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="idle-o-meter" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="io-plugins" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="plugin-manager" visible="0" x-off="3099" y-off="391" x-size="646" y-size="600"/>
+      <Window name="plugin-dsp-load" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="dsp-statistics" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="transport-masters" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-71" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-270" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="P-270-373" visible="0" x-off="2278" y-off="3" x-size="775" y-size="549" custom-ui="1"/>
+      <Window name="PM-270-373" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <Window name="RPM-1175" visible="0" x-off="-1" y-off="-1" x-size="-1" y-size="-1"/>
+      <GUIObjectState>
+        <Object id="rtav 71" height="66"/>
+        <Object id="automation 75" height="66" visible="0"/>
+        <Object id="automation 77" height="66" visible="0"/>
+        <Object id="automation 71 12/0/0" height="66" visible="0"/>
+        <Object id="automation 90" height="66" visible="0"/>
+        <Object id="strip 71">
+          <Object id="processor 101">
+            <Object id="control 75" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="rtav 270" height="66" midnam-custom-device-mode="" note-range-min="60" note-range-max="71" color-mode="MeterColors" midnam-channel="Channel  1"/>
+        <Object id="automation 307" height="66" visible="0"/>
+        <Object id="automation 270 12/0/0" height="66" visible="0"/>
+        <Object id="automation 270 31/0/0" height="66" visible="0"/>
+        <Object id="strip 270">
+          <Object id="processor 333">
+            <Object id="control 307" visible="0"/>
+          </Object>
+          <Object id="processor 373">
+            <Object id="control 375" visible="0"/>
+            <Object id="control 385" visible="0"/>
+            <Object id="control 387" visible="0"/>
+            <Object id="control 389" visible="0"/>
+            <Object id="control 391" visible="0"/>
+            <Object id="control 393" visible="0"/>
+            <Object id="control 395" visible="0"/>
+            <Object id="control 397" visible="0"/>
+            <Object id="control 399" visible="0"/>
+            <Object id="control 403" visible="0"/>
+            <Object id="control 405" visible="0"/>
+            <Object id="control 407" visible="0"/>
+            <Object id="control 409" visible="0"/>
+            <Object id="control 411" visible="0"/>
+            <Object id="control 413" visible="0"/>
+            <Object id="control 415" visible="0"/>
+            <Object id="control 417" visible="0"/>
+            <Object id="control 419" visible="0"/>
+            <Object id="control 421" visible="0"/>
+            <Object id="control 423" visible="0"/>
+            <Object id="control 425" visible="0"/>
+            <Object id="control 427" visible="0"/>
+            <Object id="control 429" visible="0"/>
+            <Object id="control 431" visible="0"/>
+            <Object id="control 433" visible="0"/>
+            <Object id="control 435" visible="0"/>
+            <Object id="control 437" visible="0"/>
+            <Object id="control 439" visible="0"/>
+            <Object id="control 441" visible="0"/>
+            <Object id="control 443" visible="0"/>
+            <Object id="control 445" visible="0"/>
+            <Object id="control 447" visible="0"/>
+          </Object>
+        </Object>
+        <Object id="automation 322" height="66" visible="0"/>
+        <Object id="rtav 1175" height="66" midnam-custom-device-mode="General MIDI" note-range-min="57" note-range-max="71" color-mode="MeterColors" midnam-channel="Channel  1"/>
+        <Object id="automation 1212" height="66" visible="0"/>
+        <Object id="automation 1175 12/0/0" height="66" visible="0"/>
+        <Object id="automation 1175 31/0/0" height="66" visible="0"/>
+        <Object id="strip 1175">
+          <Object id="processor 1238">
+            <Object id="control 1212" visible="0"/>
+          </Object>
+        </Object>
+      </GUIObjectState>
+    </UI>
+    <Videomonitor active="0"/>
+  </Extra>
+  <Script lua="Lua 5.3">c2NyaXB0cyA9IHt9IA==</Script>
+  <IOPlugins/>
+</Session>

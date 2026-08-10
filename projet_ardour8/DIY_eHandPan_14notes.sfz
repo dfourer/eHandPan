@@ -1,0 +1,24 @@
+<control>
+default_path=Samples/
+
+<global>
+ampeg_attack=0.001
+ampeg_release=0.40
+lovel=1
+hivel=127
+amp_veltrack=100
+
+<region> key=58 lokey=58 hikey=58 pitch_keycenter=58 sample=Bb3.wav
+<region> key=61 lokey=61 hikey=61 pitch_keycenter=61 sample=Db4.wav
+<region> key=63 lokey=63 hikey=63 pitch_keycenter=63 sample=Eb4.wav
+<region> key=66 lokey=66 hikey=66 pitch_keycenter=66 sample=Gb4.wav
+<region> key=68 lokey=68 hikey=68 pitch_keycenter=68 sample=Ab4.wav
+<region> key=70 lokey=70 hikey=70 pitch_keycenter=70 sample=Bb4.wav
+<region> key=57 lokey=57 hikey=57 pitch_keycenter=57 sample=A3.wav
+<region> key=59 lokey=59 hikey=59 pitch_keycenter=59 sample=B3.wav
+<region> key=60 lokey=60 hikey=60 pitch_keycenter=60 sample=C4.wav
+<region> key=62 lokey=62 hikey=62 pitch_keycenter=62 sample=D4.wav
+<region> key=64 lokey=64 hikey=64 pitch_keycenter=64 sample=E4.wav
+<region> key=65 lokey=65 hikey=65 pitch_keycenter=65 sample=F4.wav
+<region> key=67 lokey=67 hikey=67 pitch_keycenter=67 sample=G4.wav
+<region> key=69 lokey=69 hikey=69 pitch_keycenter=69 sample=A4.wav
