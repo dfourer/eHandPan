@@ -58,7 +58,28 @@ The instrument is built around:
 * Stereo audio output
 * Custom mechanical assembly based on stainless steel bowls
 
+## Construction tutorials
+
 The complete construction guide is available in the `instructions/` directory.
+
+Step-by-step video tutorials are available to complement the written
+assembly instructions provided in this repository.
+
+The tutorials illustrate the main construction steps, including:
+
+- mechanical assembly of the salad bowls and playing surfaces;
+- installation of the piezoelectric sensors and bi-color LEDs;
+- wiring and soldering;
+- DB25 connector assembly;
+- Arduino and ESP32 electronic integration;
+- firmware installation and configuration;
+- final testing of the instrument.
+
+🎥 **YouTube construction tutorials:** [eHandPan construction tutorials](https://www.youtube.com/playlist?list=PL_k3PczvzYDb-f5t7U6dC4wk6cq4hSw6F)
+
+The videos are intended as complementary visual guidance. All information
+required to reproduce the instrument is also provided in this repository.
+
 
 
 ## ARDUINO
