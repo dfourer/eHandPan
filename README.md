@@ -11,6 +11,15 @@ If you use this work, please cite our paper
 
 B. Collin, D. Fourer and E. Genotelle et al. A new low-cost DIY eHandPan instrument based on Aruino Microcontroller. Arxiv...
 
+@article{collin2026diyehandpan,
+  title={DIY e-HandPan: A new DIY Low-Cost Handpan Interface based on Arduino and ESP32 Microcontrollers}, 
+  author={Benoit Collin and Dominique Fourer and Eric Genotelle},
+  journal={arXiv preprint arXiv:2608.10185},
+  year={2026},
+  primaryClass={cs.SD},
+  url={https://arxiv.org/abs/2608.10185}, 
+}
+
 ---
 
 ## Features
@@ -176,8 +185,6 @@ Please open an Issue or submit a Pull Request.
 ## Authors
 
 DIY eHandPan was created by B. Collin, D. Fourer and E. Genotelle
-
-See the publication for the complete list of contributors.
 
 ---
 
