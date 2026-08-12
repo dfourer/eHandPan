@@ -1,15 +1,15 @@
-# DIY eHandPan
+# DIY e-HandPan
 
 - Contributors: B. Collin, D. Fourer and E. Genotelle
 
-**DIY eHandPan** is an open-source electronic handpan designed for makers, musicians, educators, and researchers.
+**DIY e-HandPan** is an open-source electronic handpan designed for makers, musicians, educators, and researchers.
 
 The project combines a custom electronic instrument based on piezoelectric sensors, RGB LEDs, and an ESP32-S3 microcontroller with a complete set of hardware documentation, firmware, and assembly instructions. The objective is to provide a low-cost, reproducible, and fully hackable electronic handpan suitable for education, prototyping, and musical performance.
 
 
 If you use this work, please cite our paper
 
-B. Collin, D. Fourer and E. Genotelle et al. A new low-cost DIY eHandPan instrument based on Aruino Microcontroller. arXiv preprint arXiv:2608.10185
+B. Collin, D. Fourer and E. Genotelle et al. A new low-cost DIY e-HandPan instrument based on Aruino Microcontroller. arXiv preprint arXiv:2608.10185
 
 ```bibtex
 @article{collin2026diyehandpan,
@@ -46,6 +46,7 @@ B. Collin, D. Fourer and E. Genotelle et al. A new low-cost DIY eHandPan instrum
 │   ├── Arduino/        # Early Arduino prototypes
 │   ├── AudioSamples/   # WAV sample libraries
 │   ├── MidiLEDPlay/    # MIDI demonstration files
+│   ├── projet_ardour8/ # Example of MIDI Expander project based on Ardour 8
 │   └── tools/          # Programming and utility tools
 │
 ├── instructions/       # Assembly manual (LaTeX + PDF)
@@ -86,7 +87,7 @@ The tutorials illustrate the main construction steps, including:
 - firmware installation and configuration;
 - final testing of the instrument.
 
-🎥 **YouTube construction tutorials:** [eHandPan construction tutorials](https://www.youtube.com/playlist?list=PL_k3PczvzYDb-f5t7U6dC4wk6cq4hSw6F)
+🎥 **YouTube construction tutorials:** [e-HandPan construction tutorials](https://www.youtube.com/playlist?list=PL_k3PczvzYDb-f5t7U6dC4wk6cq4hSw6F)
 
 The videos are intended as complementary visual guidance. All information
 required to reproduce the instrument is also provided in this repository.
