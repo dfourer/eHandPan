@@ -9,8 +9,9 @@ The project combines a custom electronic instrument based on piezoelectric senso
 
 If you use this work, please cite our paper
 
-B. Collin, D. Fourer and E. Genotelle et al. A new low-cost DIY eHandPan instrument based on Aruino Microcontroller. Arxiv...
+B. Collin, D. Fourer and E. Genotelle et al. A new low-cost DIY eHandPan instrument based on Aruino Microcontroller. arXiv preprint arXiv:2608.10185
 
+```bibtex
 @article{collin2026diyehandpan,
   title={DIY e-HandPan: A new DIY Low-Cost Handpan Interface based on Arduino and ESP32 Microcontrollers}, 
   author={Benoit Collin and Dominique Fourer and Eric Genotelle},
@@ -19,6 +20,7 @@ B. Collin, D. Fourer and E. Genotelle et al. A new low-cost DIY eHandPan instrum
   primaryClass={cs.SD},
   url={https://arxiv.org/abs/2608.10185}, 
 }
+```
 
 ---
 
