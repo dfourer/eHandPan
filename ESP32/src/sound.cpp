@@ -42,26 +42,6 @@
   #endif
 #endif
 
-#if defined(BANK2)
-  #include "wav/bank2/s00.h"
-  #ifndef DEBUG_PRG
-    #include "wav/bank2/s01.h"
-    #include "wav/bank2/s02.h"
-    #include "wav/bank2/s03.h"
-    #include "wav/bank2/s04.h"
-    #include "wav/bank2/s05.h"
-    #include "wav/bank2/s06.h"
-    #include "wav/bank2/s07.h"
-    #include "wav/bank2/s08.h"
-    #include "wav/bank2/s09.h"
-    #include "wav/bank2/s10.h"
-    #include "wav/bank2/s11.h"
-    #include "wav/bank2/s12.h"
-    #include "wav/bank2/s13.h"
-  #endif
-#endif
-
-
 //------------------------------------------------------------------------------------------------------------------------
 /// PRIVATE VARIABLES
 
@@ -584,7 +564,7 @@ float midiClic2Ms()
 /// @return HandLeftRight
 HandLeftRight getHandVelocity(int velocity) 
 {
-  return ( velocity % 2 ) ? HandRight : HandLeft;
+  return (( velocity & 0x01) == 0) ? HandRight : HandLeft;
 }
 
 HandLeftRight getHandSongNote(T_SongNote * pSongNote) 

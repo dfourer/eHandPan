@@ -12,4 +12,4 @@
 #pragma once
 
 
-#define PAN_WIFI_STA_PASSWORD       "wifiGenotelle"         //@brief Password related to SSID in WIFI STA mode
+#define PAN_WIFI_STA_PASSWORD       "tobechanged"         //@brief Password related to SSID in WIFI STA mode

@@ -16,8 +16,7 @@
 //------------------------------------------------------------------------------------------------
 // Version
 //------------------------------------------------------------------------------------------------
-#define PROGRAMME_VERSION               "1.4c"      // Version of this program
-// #define PROGRAMME_VERSION               "0104"      // Version of this program
+#define PROGRAMME_VERSION               "1.4d"      // Version of this program
 #define PROGRAMME_DATE                  __DATE__    // Date of this programf
 #define PROGRAMME_TIME                  __TIME__    // Time of this program
 #define EEPROM_CRC                      12345       // checksum for EEPROM. For first run or memory map change
@@ -62,7 +61,7 @@
 #define APPLI_MIDI_NAME             "[MIDI] DIY Handpan"
 #define PAN_WIFI_AP_SSID            "PAN"                   //SSID prefix in WIFI AP mode
 #define PAN_WIFI_AP_PASSWORD        "Pan1234!"              //Password related to SSID prefix in WIFI AP mode
-#define PAN_WIFI_STA_SSID           "BoxGnl_5GHz"           //SSID in WIFI STA mode
+#define PAN_WIFI_STA_SSID           "SSID_tiBeChanged"           //SSID in WIFI STA mode
 #define PAN_WIFI_IP                 "10.0.0.1"              //IP address in WIFI STA mode 
 #define PAN_WIFI_MASQUE             "255.255.255.0"         //IP mask and gateway address in WIFI STA mode 
 

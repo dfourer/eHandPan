@@ -233,7 +233,6 @@ void demoLED()
   DEBUG1("demoLED...")
   int led_period = conf.DELAY_LED_DEMO;
   sr.setAllLow(); // set all pins LOW
-//  uint8_t piezzo=0;
 
   // First saladier
   DEBUG1("SALADIER 1...");
@@ -361,19 +360,6 @@ void loopLED()
       if (  ( (sounds[i].ledRightOn) || (sounds[i].ledLeftOn)) && 
             (sounds[i].timeMsStop < millis() ) ) {
            displayLED(i, false, HandBoth);
-//         if (!conf.testMode) {
-//           displayLED(i, false, HandBoth);
-//         } else {
-//           // in test mode, if left LED is ON, turn OFF left and ON right
-//           if ( (sounds[i].timeMsStop < millis()) && (sounds[i].ledLeftOn) ) {
-//             displayLED(i, false, HandLeft);
-//             displayLED(i, true, HandRight);
-// //            sounds[i].timeMsStop = millis() + conf.DELAY_LED;
-//           }
-//           if ( (sounds[i].timeMsStop < millis()) && (sounds[i].ledRightOn) ) {
-//             displayLED(i, false, HandRight);
-//           }
-//         }
       }
     }
   }

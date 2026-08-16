@@ -99,8 +99,6 @@ bool NetMan::connectWifiSTA(const char * ssid, const char * password, const IPAd
 //  DEBUG2("  masque:",masque.toString())
 
   WiFi.mode(WIFI_STA);
-//  WiFi.setTxPower(WIFI_POWER);
-//  WiFi.config(ip,gw,masque);
   WiFi.hostname("spacedrum");
   WiFi.begin(ssid, password);
   int nbtry = 0;
@@ -139,9 +137,7 @@ bool NetMan::connectWifiAP(const char * ssid,const char * password, const IPAddr
   DEBUG2("  masque:",masque.toString())
 
   WiFi.mode(WIFI_AP);
-  wifi_config.ap.authmode = WIFI_AUTH_WPA2_PSK;
-
-  
+    
   WiFi.softAPConfig(ip, gw, masque);
   WiFi.hostname(ssid); 
   WiFi.softAP(ssid, password);
@@ -153,26 +149,9 @@ bool NetMan::connectWifiAP(const char * ssid,const char * password, const IPAddr
   // conf.ap.channel = 6;
   esp_wifi_set_config(WIFI_IF_AP, &conf);  
 
-/*
-  int nbtry = 0;
-  while ( (WiFi.status() != WL_CONNECTED) && (nbtry < 32) )  {
-    delay(500);
-    Serial.print(".");
-    nbtry++;
-  }
-*/
   IPAddress myIP = WiFi.softAPIP();
   DEBUG2("IP address: ",myIP);  
 
-/*
-  if (WiFi.status() == WL_CONNECTED) {
-    ret = true;
-    DEBUG1("  -> Connexion OK");
-  } else {
-    DEBUG1("  -> Connexion KO");
-  }  
-  return ret;
-*/
   return true;
 }
 

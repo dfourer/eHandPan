@@ -23,18 +23,6 @@
 
 
 
-// void loop_pan()
-// {    
-//   loopKeyboard();                                                
-//   loopPiezzo();
-//   loopVolumeGen();
-//   loopSong();
-//   loopSong(); // recheck for double note
-//   loopLED();
-//   loopPlayWaves();
-//   loopWeb();
-// }
-
 
 
 void taskScanPiezzo(void * pvParameters) 
@@ -45,19 +33,6 @@ void taskScanPiezzo(void * pvParameters)
   
 }
  
-// void taskMain(void * pvParameters) {
-//   while (1) {
-//     loopKeyboard();                                                
-//     loopPlayPiezzo();
-//     loopVolumeGen();
-//     loopSong();
-//     loopSong(); // recheck for double note
-//     loopLED();
-//     loopPlayWaves();
-// //    loopWeb();
-//   }
-// }
-
 
 //====================================================================================
 /// @brief  SETUP for ESP32
