@@ -193,7 +193,19 @@ DIY eHandPan was created by B. Collin, D. Fourer and E. Genotelle
 
 ## License
 
-This project is released under the MIT License.
+The DIY e-HandPan project is distributed under the following licenses:
+
+Software: The Arduino and ESP32 firmware are released under the MIT License.
+
+Hardware: The electronic schematics, PCB designs, and associated hardware design files are released under the CERN Open Hardware Licence Version 2 – Permissive (CERN-OHL-P-2.0).
+
+Documentation: The original assembly instructions, tutorials, and project documentation are released under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Audio samples: Licensing information and attribution are provided separately for the audio resources. Redistribution and reuse are subject to the rights associated with each sample.
+
+Copyright © 2026 Benoit Collin, Dominique Fourer and Eric Genotelle.
+
+The applicable license is determined by the type of material. 
 
 See the `LICENSE` file for details.
 
